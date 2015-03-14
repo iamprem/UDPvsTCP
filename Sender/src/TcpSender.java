@@ -38,7 +38,7 @@ public class TcpSender {
 	}
 
 	private String constructMessage() {
-		int lengthOfMessage = 200;
+		int lengthOfMessage = 1000;
 		String message = "";
 		for (int i = 0; i < lengthOfMessage; i++) {
 			message += "C";
