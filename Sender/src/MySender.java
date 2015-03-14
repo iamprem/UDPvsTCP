@@ -14,9 +14,12 @@ public class MySender {
 	 */
 	public static void main(String[] args) throws UnknownHostException, IOException, InterruptedException {
 		
-		int port = 8777;
-		String host = "localhost";
+//		int port = 8777;
+//		String host = "localhost";
 
+		int port = 8777;
+		String host = args[0];
+		
 		Socket mySocket = new Socket(host, port);
 		TcpSender tcpSender = new TcpSender(mySocket);
 		double ete = 0,totalEte = 0,avgEte = 0,maxEte = 0;
