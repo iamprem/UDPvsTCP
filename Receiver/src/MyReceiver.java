@@ -29,6 +29,7 @@ public class MyReceiver {
 	public static void main(String[] args) throws IOException {
 		
 		int port = 8777;
+		System.out.println(InetAddress.getLocalHost());
 		DatagramSocket myDatagramSocket = new DatagramSocket(port, InetAddress.getLocalHost());
 		UdpReceiver udpReceiver = new UdpReceiver(myDatagramSocket);
 		System.out.println("Starting Server... Port: 8777 Host: ");
