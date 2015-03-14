@@ -31,7 +31,7 @@ public class MySender {
 			tcpSender.send(i);
 			long endTime = System.nanoTime();
 			
-			ete = (endTime - startTime)/(2*1000);
+			ete = (endTime - startTime)/(2*1000000);
 			if (ete > maxEte) {
 				maxEte = ete;
 			}
